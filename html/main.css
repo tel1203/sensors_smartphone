@@ -1,0 +1,55 @@
+h1 {
+  font-size: 1.3em;
+  padding: -2px 0px 0px 0px; /* T R B L */
+}
+
+h2 {
+  font-size: 0.9em;
+  padding: 0px 0px 0px 0px; /* T R B L */
+}
+
+div {
+  font-size: 1.0em;
+}
+
+.boxData {
+  border: solid 1px #333333;
+  border-radius: 10px;
+  padding: 0.5em 1.0em 0.6em 1.0em; /* T R B L */
+
+/*  width: 10em; */
+}
+
+.boxDataSub {
+  border: solid 1px #333333;
+  border-radius: 5px;
+
+  padding: 0.3em 0.8em 0.3em 0.8em; /* T R B L */
+  margin-top: 0.5em;
+
+/*  width: 10em; */
+}
+
+.nodisplay {
+  display: none;
+}
+
+#clientX,#clientY,#pageX,#pageY,#screenX,#screenY {
+  display: inline;
+}
+
+#acclXa,#acclYa,#acclZa,#acclXg,#acclYg,#acclZg {
+  display: inline;
+}
+
+#gyroA,#gyroB,#gyroG {
+  display: inline;
+}
+
+#gmap {
+  min-width:200px;
+  max-width:800px;
+  min-height:200px;
+  max-height:600px;
+}
+

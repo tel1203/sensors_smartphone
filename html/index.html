@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smartphone Sensors Demonstration</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link href="main.css" rel="stylesheet" />
+
+    <script src="util/jquery-2.2.4.min.js"></script>
+    <script src="util/highcharts.js"></script>
+    <script src="util/exporting.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?AIzaSyBNH8-Z8ay4RIgDDsknWhjVDFTCU_yMReE"></script>
+
+    <script src="js/smartphonesensors.js"></script>
+    <script src="js/location.js"></script>
+    <script src="js/graph.js"></script>
+    <script src="js/gmap.js"></script>
+    <script src="js/getipaddr.js"></script>
+</head>
+
+<body>
+
+<div class="boxData">
+  <H1> Sensors </H1>
+  <H2> Touch Sensor </H2>
+  <div id="dataTouch" class="boxDataSub">
+    <div>
+      (
+      <div id="clientX">0</div>
+      <div id="clientY">0</div>
+      )
+    </div>
+    <div>
+      (
+      <div id="pageX">0</div>
+      <div id="pageY">0</div>
+      )
+    </div>
+    <div>
+      (
+      <div id="screenX">0</div>
+      <div id="screenY">0</div>
+      )
+    </div>
+
+    <div id="graphTouch" class="boxDataSub">
+    </div>
+  </div>
+  
+  <H2> Location Sensor </H2>
+  <div id="dataGPS" class="boxDataSub">
+    <div id="location">---</div>
+    <div id="gmap">map</div>
+  </div>
+  
+  <H2> Accelerometer Sensor </H2>
+  <div id="dataAccl" class="boxDataSub">
+    <div>
+      (
+      <div id="acclXa">0</div>
+      <div id="acclYa">0</div>
+      <div id="acclZa">0</div>
+      )
+    </div>
+    <div id="graphAcclA" style="min-width: 200px; min-height: 200px; margin: 0 auto"></div>
+    <div>
+      (
+      <div id="acclXg">0</div>
+      <div id="acclYg">0</div>
+      <div id="acclZg">0</div>
+      )
+    </div>
+    <div id="graphAcclG" style="min-width: 200px; min-height: 200px; margin: 0 auto"></div>
+  </div>
+  
+  <H2> Gyrometer Sensor </H2>
+  <div id="dataGyro" class="boxDataSub">
+    <div>
+      (
+      <div id="gyroA">0</div>
+      <div id="gyroB">0</div>
+      <div id="gyroG">0</div>
+      )
+    </div>
+    <div id="graphGyro" style="min-width: 200px; min-height: 200px; margin: 0 auto"></div>
+  </div>
+  
+  <H2> Text Message </H2>
+  <div id="inputText" class="boxDataSub">
+    <div id="textMsg">---</div>
+  </div>
+
+<div class="nodisplay"> 
+  <HR/>
+  <H2> IP Address </H2>
+  <div id="" class="boxDataSub">
+    <h2> local IP:</h2>
+    <h2> public IP:</h2>
+    <h2> IPv6:</h2>
+    <iframe id="iframe" sandbox="allow-same-origin" style="display: none"></iframe>
+  </div>
+</div>
+ 
+</div>
+
+</body>
+
+</html>
+
